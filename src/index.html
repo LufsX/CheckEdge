@@ -48,6 +48,7 @@
             <div class="col-sm-6 sk-pt-5">
                 <div class="sk-shadow-1 sk-p-5">
                     <h4 class="sk-mt-0 sk-mb-3 sk-text-bold">Stable 稳定版 32 位&nbsp;&nbsp;
+                        <small>Windows</small>
                         <small>{{stable-x86-Version}}</small>
                     </h4>
                     <hr class="sk-mt-0 sk-mb-3">
@@ -70,6 +71,7 @@
             <div class="col-sm-6 sk-pt-5">
                 <div class="sk-shadow-1 sk-p-5">
                     <h4 class="sk-mt-0 sk-mb-3 sk-text-bold">Stable 稳定版 64 位&nbsp;&nbsp;
+                        <small>Windows</small>
                         <small>{{stable-x64-Version}}</small>
                     </h4>
                     <hr class="sk-mt-0 sk-mb-3">
@@ -89,11 +91,35 @@
                     </div>
                 </div>
             </div>
+            <div class="col-sm-6 sk-pt-5">
+                <div class="sk-shadow-1 sk-p-5">
+                    <h4 class="sk-mt-0 sk-mb-3 sk-text-bold">Stable 稳定版 64 位&nbsp;&nbsp;
+                        <small>macOS</small>
+                        <small>{{mac-stable-x64-Version}}</small>
+                    </h4>
+                    <hr class="sk-mt-0 sk-mb-3">
+                    <p class="sk-mb-1">
+                        <span class="sk-text-bold">文件大小</span>&nbsp;&nbsp;
+                        <code>{{mac-stable-x64-Size}}</code>
+                    </p>
+                    <p>
+                        <span class="sk-fl sk-pr-3 sk-pt-3 sk-text-bold">SHA256</span>
+                        <pre class="sk-p-1 sk-text-uppercase sha-256">{{stable-x64-SHA256}}</pre>
+                    </p>
+                    <div class="btn-group sk-mt-3" role="group">
+                        <a href="{{mac-stable-x64-dl}}" class="btn btn-success">
+                            <i class="glyphicon glyphicon-save" aria-hidden="true"></i>
+                            <span>点击下载</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row" id="beta">
             <div class="col-sm-6 sk-pt-5">
                 <div class="sk-shadow-1 sk-p-5">
                     <h4 class="sk-mt-0 sk-mb-3 sk-text-bold">Beta 测试版 32 位&nbsp;&nbsp;
+                        <small>Windows</small>
                         <small>{{beta-x86-Version}}</small>
                     </h4>
                     <hr class="sk-mt-0 sk-mb-3">
@@ -116,6 +142,7 @@
             <div class="col-sm-6 sk-pt-5">
                 <div class="sk-shadow-1 sk-p-5">
                     <h4 class="sk-mt-0 sk-mb-3 sk-text-bold">Beta 测试版 64 位&nbsp;&nbsp;
+                        <small>Windows</small>
                         <small>{{beta-x64-Version}}</small>
                     </h4>
                     <hr class="sk-mt-0 sk-mb-3">
@@ -135,11 +162,35 @@
                     </div>
                 </div>
             </div>
+            <div class="col-sm-6 sk-pt-5">
+                <div class="sk-shadow-1 sk-p-5">
+                    <h4 class="sk-mt-0 sk-mb-3 sk-text-bold">Beta 测试版 64 位&nbsp;&nbsp;
+                        <small>macOS</small>
+                        <small>{{mac-beta-x64-Version}}</small>
+                    </h4>
+                    <hr class="sk-mt-0 sk-mb-3">
+                    <p class="sk-mb-1">
+                        <span class="sk-text-bold">文件大小</span>&nbsp;&nbsp;
+                        <code>{{mac-beta-x64-Size}}</code>
+                    </p>
+                    <p>
+                        <span class="sk-fl sk-pr-3 sk-pt-3 sk-text-bold">SHA256</span>
+                        <pre class="sk-p-1 sk-text-uppercase sha-256">{{mac-beta-x64-SHA256}}</pre>
+                    </p>
+                    <div class="btn-group sk-mt-3" role="group">
+                        <a href="{{mac-beta-x64-dl}}" class="btn btn-primary">
+                            <i class="glyphicon glyphicon-save" aria-hidden="true"></i>
+                            <span>点击下载</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row" id="dev">
             <div class="col-sm-6 sk-pt-5">
                 <div class="sk-shadow-1 sk-p-5">
                     <h4 class="sk-mt-0 sk-mb-3 sk-text-bold">Dev 开发版 32 位&nbsp;&nbsp;
+                        <small>Windows</small>
                         <small>{{dev-x86-Version}}</small>
                     </h4>
                     <hr class="sk-mt-0 sk-mb-3">
@@ -162,16 +213,17 @@
             <div class="col-sm-6 sk-pt-5">
                 <div class="sk-shadow-1 sk-p-5">
                     <h4 class="sk-mt-0 sk-mb-3 sk-text-bold">Dev 开发版 64 位&nbsp;&nbsp;
-                        <small>{{dev-x64-Version}}</small>
+                        <small>macOS</small>
+                        <small>{{mac-dev-x64-Version}}</small>
                     </h4>
                     <hr class="sk-mt-0 sk-mb-3">
                     <p class="sk-mb-1">
                         <span class="sk-text-bold">文件大小</span>&nbsp;&nbsp;
-                        <code>{{dev-x64-Size}}</code>
+                        <code>{{mac-dev-x64-Size}}</code>
                     </p>
                     <p>
                         <span class="sk-fl sk-pr-3 sk-pt-3 sk-text-bold">SHA256</span>
-                        <pre class="sk-p-1 sk-text-uppercase sha-256">{{dev-x64-SHA256}}</pre>
+                        <pre class="sk-p-1 sk-text-uppercase sha-256">{{mac-dev-x64-SHA256}}</pre>
                     </p>
                     <div class="btn-group sk-mt-3" role="group">
                         <a href="{{dev-x64-dl}}" class="btn btn-warning">
@@ -186,6 +238,7 @@
             <div class="col-sm-6 sk-pt-5">
                 <div class="sk-shadow-1 sk-p-5">
                     <h4 class="sk-mt-0 sk-mb-3 sk-text-bold">Canary 金丝雀 32 位&nbsp;&nbsp;
+                        <small>Windows</small>
                         <small>{{canary-x86-Version}}</small>
                     </h4>
                     <hr class="sk-mt-0 sk-mb-3">
@@ -208,6 +261,7 @@
             <div class="col-sm-6 sk-pt-5">
                 <div class="sk-shadow-1 sk-p-5">
                     <h4 class="sk-mt-0 sk-mb-3 sk-text-bold">Canary 金丝雀 64 位&nbsp;&nbsp;
+                        <small>Windows</small>
                         <small>{{canary-x64-Version}}</small>
                     </h4>
                     <hr class="sk-mt-0 sk-mb-3">
@@ -218,6 +272,29 @@
                     <p>
                         <span class="sk-fl sk-pr-3 sk-pt-3 sk-text-bold">SHA256</span>
                         <pre class="sk-p-1 sk-text-uppercase sha-256">{{canary-x64-SHA256}}</pre>
+                    </p>
+                    <div class="btn-group sk-mt-3" role="group">
+                        <a href="{{canary-x64-dl}}" class="btn btn-danger">
+                            <i class="glyphicon glyphicon-save" aria-hidden="true"></i>
+                            <span>点击下载</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 sk-pt-5">
+                <div class="sk-shadow-1 sk-p-5">
+                    <h4 class="sk-mt-0 sk-mb-3 sk-text-bold">Canary 金丝雀 64 位&nbsp;&nbsp;
+                        <small>macOS</small>
+                        <small>{{mac-canary-x64-Version}}</small>
+                    </h4>
+                    <hr class="sk-mt-0 sk-mb-3">
+                    <p class="sk-mb-1">
+                        <span class="sk-text-bold">文件大小</span>&nbsp;&nbsp;
+                        <code>{{mac-canary-x64-Size}}</code>
+                    </p>
+                    <p>
+                        <span class="sk-fl sk-pr-3 sk-pt-3 sk-text-bold">SHA256</span>
+                        <pre class="sk-p-1 sk-text-uppercase sha-256">{{mac-canary-x64-SHA256}}</pre>
                     </p>
                     <div class="btn-group sk-mt-3" role="group">
                         <a href="{{canary-x64-dl}}" class="btn btn-danger">
