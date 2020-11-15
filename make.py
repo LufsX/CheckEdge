@@ -3,10 +3,10 @@ import re
 import requests
 
 macPlayLoad = {}
-data = re.findall('data-whole-json=".*">', requests.get(
-    "https://www.microsoft.com/zh-cn/edge/business/download").text)[0]
+macLink="https://go.microsoft.com/fwlink/?linkid=2069147&platform=Mac&Consent=0&channel=Canary"
+data = re.findall('(?<=data-whole-json=").+?(?=">)', requests.get("https://www.microsoft.com/zh-cn/edge/business/download").text)[0]
 clearData = re.sub('&quot;', '"', data)
-jsonData = json.loads(re.sub('data-whole-json="|">', '', clearData))
+jsonData = json.loads(clearData)
 
 # 0 -> Dev
 # 1 -> Beta
@@ -28,7 +28,7 @@ for product in jsonData:
 # 2 -> Windows x64
 # 3 -> MacOS x64
 
-
+print(stableData,betaData,devData,)
 
 # windowsArm64DevLocation =
 # windowsArm64DevHash =
